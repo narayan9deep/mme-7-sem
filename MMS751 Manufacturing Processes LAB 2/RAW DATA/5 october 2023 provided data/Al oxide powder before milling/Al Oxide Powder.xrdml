@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xrdMeasurements xmlns="http://www.xrdml.com/XRDMeasurement/1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xrdml.com/XRDMeasurement/1.3 http://www.xrdml.com/XRDMeasurement/1.3/XRDMeasurement.xsd" status="Completed">
+	<comment>
+		<entry>Configuration=Stage Flat Bracket, Owner=User-1, Creation date=5/4/2010 11:26:49 AM</entry>
+		<entry>Goniometer=PW3050/60 (Theta/Theta); Minimum step size 2Theta:0.001; Minimum step size Omega:0.001</entry>
+		<entry>Sample stage=PW3071/xx Bracket</entry>
+		<entry>Diffractometer system=XPERT-PRO</entry>
+		<entry>Measurement program=Manab, Owner=User-1, Creation date=8/17/2009 1:44:37 AM</entry>
+	</comment>
+	<sample type="To be analyzed">
+		<id></id>
+		<name></name>
+		<preparedBy></preparedBy>
+	</sample>
+	<xrdMeasurement measurementType="Scan" status="Completed" sampleMode="Reflection">
+		<comment>
+			<entry/>
+		</comment>
+		<usedWavelength intended="K-Alpha 1">
+			<kAlpha1 unit="Angstrom">1.5405980</kAlpha1>
+			<kAlpha2 unit="Angstrom">1.5444260</kAlpha2>
+			<kBeta unit="Angstrom">1.3922500</kBeta>
+			<ratioKAlpha2KAlpha1>0.5000</ratioKAlpha2KAlpha1>
+		</usedWavelength>
+		<incidentBeamPath>
+			<radius unit="mm">240.00</radius>
+			<xRayTube id="1010048" name="PW3373/10 Cu LFF DK277404">
+				<tension unit="kV">45</tension>
+				<current unit="mA">40</current>
+				<anodeMaterial>Cu</anodeMaterial>
+				<focus type="Line">
+					<length unit="mm">12.0</length>
+					<width unit="mm">0.4</width>
+					<takeOffAngle unit="deg">6.0</takeOffAngle>
+				</focus>
+			</xRayTube>
+			<sollerSlit id="21010002" name="Soller 0.04 rad.">
+				<opening unit="rad">0.0400</opening>
+			</sollerSlit>
+			<mask id="22080002" name="Inc. Mask Fixed  10 mm (MPD/MRD)">
+				<width unit="mm">6.60</width>
+			</mask>
+			<divergenceSlit id="22010003" name="Slit Fixed 1°" xsi:type="fixedDivergenceSlitType">
+				<distanceToSample unit="mm">140.00</distanceToSample>
+				<height unit="mm">1.52</height>
+			</divergenceSlit>
+		</incidentBeamPath>
+		<diffractedBeamPath>
+			<radius unit="mm">240.00</radius>
+			<antiScatterSlit id="22010002" name="Slit Fixed 2°" xsi:type="fixedAntiScatterSlitType">
+				<height unit="mm">3.03</height>
+			</antiScatterSlit>
+			<sollerSlit id="21010002" name="Soller 0.04 rad.">
+				<opening unit="rad">0.0400</opening>
+			</sollerSlit>
+			<monochromator id="23010019" name="Diffr. Beam Curved 1x graphite for Cu" hybrid="false">
+				<crystal type="Symmetric" shape="Curved">C</crystal>
+				<numberOfReflections>1</numberOfReflections>
+				<hkl>
+					<h>0</h>
+					<k>0</k>
+					<l>2</l>
+				</hkl>
+			</monochromator>
+			<receivingSlit id="22020009" name="Prog. Rec. Slit">
+				<height unit="mm">0.10</height>
+			</receivingSlit>
+			<detector id="7010011" name="PW3011/20 (Miniprop. large window)" xsi:type="pointDetectorType">
+				<phd>
+					<lowerLevel unit="%">35.0</lowerLevel>
+					<upperLevel unit="%">80.0</upperLevel>
+				</phd>
+			</detector>
+		</diffractedBeamPath>
+		<scan appendNumber="0" mode="Continuous" scanAxis="Gonio" status="Completed">
+			<header>
+				<startTimeStamp>2023-08-23T11:45:25+05:30</startTimeStamp>
+				<endTimeStamp>2023-08-23T12:15:27+05:30</endTimeStamp>
+				<author>
+					<name>National Institute</name>
+				</author>
+				<source>
+					<applicationSoftware version="2.2i">X'Pert Data Collector</applicationSoftware>
+					<instrumentControlSoftware version="2.2 ">XPERT-PRO</instrumentControlSoftware>
+					<instrumentID>0000000011074642</instrumentID>
+				</source>
+			</header>
+			<dataPoints>
+				<positions axis="2Theta" unit="deg">
+					<startPosition>10.025</startPosition>
+					<endPosition>99.975</endPosition>
+				</positions>
+				<positions axis="Omega" unit="deg">
+					<startPosition>5.0125</startPosition>
+					<endPosition>49.9875</endPosition>
+				</positions>
+				<commonCountingTime unit="seconds">1.00</commonCountingTime>
+				<intensities unit="counts">61 62 63 35 62 57 59 60 53 63 52 48 61 58 57 54 58 56 56 56 45 55 63 48 50 53 36 57 54 47 42 51 43 42 46 39 45 43 38 47 50 41 49 39 49 48 34 49 42 51 54 41 51 56 47 43 45 36 35 46 35 36 47 34 45 31 30 37 41 43 40 36 33 38 34 35 37 38 28 40 39 28 33 33 36 36 33 33 38 29 41 39 39 32 31 30 28 32 31 33 28 30 30 27 22 34 27 35 35 40 56 74 89 45 32 27 33 34 25 16 27 38 34 25 26 28 33 30 28 20 19 29 28 30 27 21 26 27 39 22 27 40 27 25 26 22 23 34 25 29 23 33 31 29 21 23 20 32 27 29 18 37 24 22 20 18 27 28 19 30 24 25 19 26 25 27 21 24 28 20 29 19 31 16 33 31 27 16 23 19 20 24 17 33 27 14 22 36 39 34 25 18 18 11 29 15 16 20 16 20 18 17 22 22 15 16 23 22 27 15 22 16 14 23 18 17 19 22 17 21 23 19 27 20 26 26 19 19 20 15 15 23 18 18 16 19 17 15 15 11 16 11 17 18 13 17 13 16 22 17 21 12 14 18 15 12 20 14 15 11 21 12 18 20 18 13 12 10 16 22 12 11 14 12 17 16 15 15 13 7 21 14 15 14 15 14 13 18 8 18 16 10 19 20 23 29 34 66 109 271 608 954 568 212 57 27 17 18 13 11 15 17 18 8 10 15 15 9 14 11 16 14 11 13 18 10 10 10 9 9 4 17 12 11 5 13 13 13 14 7 7 13 14 11 13 6 6 12 12 10 10 13 8 7 12 12 8 12 12 9 10 8 11 7 8 15 5 5 9 14 11 7 9 9 7 14 12 11 9 9 8 6 12 6 16 6 11 11 12 24 11 15 12 10 9 12 7 11 11 9 8 6 2 9 8 11 16 9 10 9 6 5 12 11 9 11 7 8 15 12 14 16 12 19 10 9 12 22 23 39 30 13 12 14 7 10 5 4 5 9 5 9 7 10 7 2 5 12 7 10 11 10 17 39 89 51 51 18 10 7 10 10 10 5 6 4 13 7 11 11 6 2 7 6 6 5 8 6 5 11 5 23 5 9 15 18 16 28 33 65 149 341 730 728 343 212 60 47 33 15 16 10 11 20 29 40 28 28 15 11 10 6 8 11 3 6 7 9 8 7 7 2 10 15 17 13 4 8 10 3 10 10 7 14 15 22 23 28 13 17 15 29 43 122 290 490 271 211 68 43 30 15 17 7 9 14 4 2 10 7 8 11 5 10 5 7 6 1 11 6 8 10 11 10 3 5 3 4 7 6 5 8 7 18 14 13 11 7 7 11 9 16 10 13 8 18 17 8 15 10 12 6 11 6 7 0 7 9 7 4 5 4 6 5 3 6 8 5 4 3 6 9 8 24 14 11 12 9 8 5 5 6 10 10 26 21 23 14 14 11 2 8 4 10 6 14 13 12 16 16 30 47 65 97 206 434 1292 1190 615 625 220 86 42 24 19 15 10 13 12 12 16 20 14 15 17 10 18 29 10 13 11 9 11 23 15 8 10 8 2 4 6 6 6 2 3 4 4 6 6 3 4 5 3 3 3 9 7 5 5 12 11 7 21 18 7 7 12 3 6 8 6 3 9 5 8 10 16 13 9 8 5 3 9 3 6 3 6 2 6 5 6 7 4 3 2 4 1 5 5 3 5 7 8 3 3 9 2 0 6 0 2 1 3 1 2 7 7 2 4 6 7 2 4 5 7 5 3 2 11 8 4 12 4 5 7 3 1 5 5 4 4 6 4 2 7 2 4 5 4 4 1 4 3 4 3 3 2 5 4 3 3 3 4 3 2 4 5 11 3 8 3 0 4 7 7 5 9 6 7 15 8 10 8 13 17 19 27 36 65 212 425 451 210 227 170 61 22 21 6 3 6 8 4 3 8 9 8 5 4 4 5 5 3 1 7 5 1 5 4 5 6 2 5 5 1 4 4 5 5 4 6 1 3 1 3 6 8 2 3 2 6 3 2 6 1 3 9 6 10 9 4 6 4 2 7 2 5 1 2 10 9 11 6 11 5 5 5 3 5 8 5 5 8 7 9 17 7 10 12 10 12 18 13 28 39 58 73 132 350 819 635 294 362 376 112 78 42 28 28 18 6 12 6 7 13 10 7 7 4 3 5 2 6 12 19 21 14 11 16 12 6 8 5 3 8 3 4 10 7 7 8 7 11 11 36 29 18 13 12 6 10 7 8 5 3 5 4 8 2 4 1 5 3 5 4 5 6 2 6 8 22 29 49 22 41 85 92 34 35 40 27 12 4 4 6 4 4 1 8 2 7 4 7 4 4 3 4 3 8 7 9 6 9 4 4 1 4 2 5 3 4 5 2 2 4 3 2 2 4 6 4 3 2 5 4 2 3 1 2 4 4 3 3 2 2 1 2 3 2 7 6 3 5 4 6 2 6 2 4 2 6 6 5 8 2 4 3 6 10 10 8 5 9 6 10 12 6 17 41 29 13 25 24 17 27 31 23 50 144 401 431 190 131 222 203 56 55 45 37 22 20 19 13 3 5 9 7 3 9 11 7 10 11 9 8 9 26 22 35 36 45 92 169 372 371 180 150 182 202 58 32 19 12 11 10 10 9 8 3 10 7 8 4 5 4 7 4 7 4 8 2 6 5 12 27 47 14 19 11 21 13 6 3 6 7 3 9 17 16 7 8 4 12 6 4 4 5 3 4 2 3 1 3 3 3 4 4 4 4 2 7 3 3 2 5 3 3 2 4 4 5 1 8 2 5 2 4 4 1 6 5 4 3 2 4 4 2 4 2 2 4 4 2 4 1 1 4 3 7 2 1 3 6 5 3 2 5 2 3 3 5 2 6 2 14 11 12 5 10 10 7 5 5 5 1 2 4 1 2 4 1 8 1 6 4 2 1 6 5 1 5 5 4 6 1 4 3 6 4 8 3 3 2 5 2 3 7 4 6 4 7 4 10 8 24 48 74 96 77 43 27 68 57 81 141 94 36 30 51 50 33 13 13 7 6 4 6 3 4 4 3 1 2 5 3 4 6 4 3 2 3 4 1 2 2 3 0 4 1 5 4 7 2 2 2 6 3 5 2 3 3 7 4 3 2 7 4 2 1 1 6 2 6 3 8 12 11 11 11 8 13 18 35 75 79 27 16 19 38 21 4 8 4 7 5 1 3 2 5 6 2 3 2 6 0 3 1 1 2 5 5 1 4 1 5 4 1 0 3 1 3 3 1 0 0 3 3 3 0 5 1 6 10 2 12 6 4 4 5 4 5 5 2 3 5 2 3 3 8 5 1 6 14 13 11 20 47 47 18 9 11 23 21 16 11 4 3 2 4 3 2 4 8 5 4 5 0 1 3 4 8 10 4 3 6 3 3 3 3 8 3 4 2 7 20 28 39 36 37 45 39 40 30 16 23 20 14 6 3 7 4 4 4 1 5 2 4 2 4 6 1 1 4 3 0 2 2 1 6 2 3 2 5 3 2 4 1 7 3 2 16 3 7 4 11 9 15 18 44 88 76 34 23 22 42 50 26 11 4 4 2 5 3 3 7 2 5 2 3 4 5 1 4 3 6 4 4 7 2 4 8 4 16 23 47 16 8 8 8 19 25 27 74 88 64 27 23 35 33 29 22 11 10 3 5 6 7 2 1 2 8 0 5 5 4 2 5 4 4 3 5 5 3 1 3 6 6 2 3 2 1 3 3 4 4 2 3 4 3 3 3 2 9 1 3 1 5 6 5 6 2 0 4 11 12 7 4 7 3 5 4 4 7 5 10 8 10 5 13 20 31 24 54 109 196 182 76 38 39 48 84 85 41 27 12 11 12 7 6 8 6 6 2 4 8 4 3 7 6 4 3 4 3 0 5 5 2 2 3 7 1 2 2 6 7 2 2 3 2 2 3 1 1 0 3 2 1 2 4 4 3 1 6 3 11 11 11 20 15 11 5 12 8 10 11 7 4 8 4 4 1 3 4 3 3 1 4 1 3 3 3 2 3 2 4 3 5 5 2 2</intensities>
+			</dataPoints>
+		</scan>
+	</xrdMeasurement>
+</xrdMeasurements>
